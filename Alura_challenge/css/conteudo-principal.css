@@ -1,5 +1,5 @@
 .caixa{
-     
+    
 }
 
 #caixa__grande{
@@ -20,47 +20,76 @@
     border-radius: 8px;
 }
 
-.laranja{
-    position: relative;
+.area{
+    position:relative;
     left: 354px;
     top: 53px;
-    
-    /* width: 12px;
-    height: 12px;
-    left: 16px;
-    top: 16px; */
+    width: 688px;
+    height: 302px;
+    background: #141414;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
     border-radius: 8px;
-
-    /* Mac/$mac_red */
-
-    background: #FF5F56;
+    color: white;
 }
 
-#caixa__media{
+ .img__botoes{
+    border-radius: 8px;
+    background: #141414;
+
+     
+
+} 
+.codigo{
+    background: #141414;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 1em;
+    
+}
+
+/*  #caixa__media{
+    
     
     color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
-    /* padding: 16px; */
-
+     padding: 16px; 
     position: absolute;
     width: 688px;
     height: 302px;
     left: 354px;
-    top: 150px;
+    top: 170px;
     resize: none;
 
     background: #141414;
-    /* $editor-shadow */
+    $editor-shadow 
 
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
     border-radius: 8px;
 
-    /* Inside Auto Layout */
+     Inside Auto Layout 
 
-    flex: none;
+     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 10px 0px;
+    margin: 10px 0px; 
+}  */
+
+.visualizar{
+       
+    position: absolute;
+    width: 760px;
+    height: 56px;
+    left: 320px;
+    top: 526px;
+    padding: 5px;
+    background: rgba(80, 129, 251, 0.08);
+    border-radius: 8px;   
+    border: none;  
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 1em;
+    
 }
