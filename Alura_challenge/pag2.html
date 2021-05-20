@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cabecalho_pag2.css">
+    <link rel="stylesheet" href="css/conteudo_pag2.css">
+    
+</head>
+<body>
+    <header class="cabecalho">
+
+        <div class="container">
+            <nav class="cabecalho__nav">
+                <img class="cabecalho__nav_logo" src="imagens/Logo.svg" alt="Logo da Plataforma Alura DEV">
+
+                <input class="cabecalho__nav_pesquisa" type="text" placeholder="Busque por algo">
+
+                <img class="cabecalho__nav_foto" src="imagens/author.png" alt="Foto do usuário">
+
+            </nav>
+
+        </div>
+
+        <nav class="menu">
+
+            <h2 class="titulo_menu">menu</h2>
+            <ul class="lista__menu">
+                <li class="itens__lista">
+                    <img class="img__editor" src="imagens/Icon.png" alt="Logo do editor de texto">
+                    <a class="editor_texto" href="#">Editor de Texto</a>
+                </li>
+                <li class="itens__lista">
+                    <img class="img__comunidade" src="imagens/Icon-1.png" alt="Logo da comunidade">
+                    <a class="comunidade" href="#">Comunidade</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="caixa">
+            <textarea name="teste" id="caixa__grande" cols="30" rows="10"></textarea>
+
+            <div class="area">
+                <img class="img__botoes" src="imagens/mac_buttons.png" alt="">
+                <p class="codigo">
+                    <br> <br>
+
+                    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) <br> <br>
+
+                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) <br> <br>
+
+                    const unfold = (f, seed) => { <br>
+                    const go = (f, seed, acc) => { <br>
+                    const res = f(seed) <br>
+                    return res ? go(f, res[1], acc.concat([res[0]])) : acc <br>
+                    } <br>
+                    return go(f, seed, []) <br>
+                    } <br>
+                </p>
+
+            
+            </div>
+
+        </div>
+
+    </main>
+</body>
+</html>

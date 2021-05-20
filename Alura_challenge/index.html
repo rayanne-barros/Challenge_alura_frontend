@@ -1,111 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alura Challenge</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/cabecalho.css">
-    <link rel="stylesheet" href="css/conteudo-principal.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/projeto.css">
-    
-</head>
-<body>
-    <header class="cabecalho">
 
-        <div class="container">
-            <nav class="cabecalho__nav">
-                <img class="cabecalho__nav_logo" src="imagens/Logo.svg" alt="Logo da Plataforma Alura DEV">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alura Challenge</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/cabecalho.css">
+        <link rel="stylesheet" href="css/conteudo-principal.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/projeto.css">
 
-                <input class="cabecalho__nav_pesquisa" type="text"  placeholder="Busque por algo">
-                
-                <img class="cabecalho__nav_foto" src="imagens/author.png" alt="Foto do usuário">
+    </head>
 
-            </nav> 
+    <body>
+        <header class="cabecalho">
 
-        </div>
+            <div class="container">
+                <nav class="cabecalho__nav">
+                    <img class="cabecalho__nav_logo" src="imagens/Logo.svg" alt="Logo da Plataforma Alura DEV">
 
-        <nav class="menu">
+                    <input class="cabecalho__nav_pesquisa" type="text" placeholder="Busque por algo">
 
-            <h2 class="titulo_menu">menu</h2>
-            <ul class="lista__menu">
-                <li class="itens__lista">
-                    <img class="img__editor" src="imagens/editor_texto.png" alt="Logo do editor de texto">
-                        <a class="editor_texto"  href="#">Editor de Texto</a>
-                </li>
-                <li class="itens__lista">
-                    <img  class="img__comunidade"  src="imagens/comunidade.png" alt="Logo da comunidade">
+                    <img class="cabecalho__nav_foto" src="imagens/author.png" alt="Foto do usuário">
+
+                </nav>
+
+            </div>
+
+            <nav class="menu">
+
+                <h2 class="titulo_menu">menu</h2>
+                <ul class="lista__menu">
+                    <li class="itens__lista">
+                        <img class="img__editor" src="imagens/editor_texto.png" alt="Logo do editor de texto">
+                        <a class="editor_texto" href="#">Editor de Texto</a>
+                    </li>
+                    <li class="itens__lista">
+                        <img class="img__comunidade" src="imagens/comunidade.png" alt="Logo da comunidade">
                         <a class="comunidade" href="#">Comunidade</a>
-                </li>
-            </ul>
-            
-        </nav>
+                    </li>
+                </ul>
 
-    </header>
+            </nav>
 
-    <main class="caixa">
-        
-        <textarea name="teste" id="caixa__grande" cols="30" rows="10"></textarea>             
-        
-      <div class="area">
-            <img class="img__botoes" src="imagens/mac_buttons.png" alt="">
-            <p class="codigo">
-            <br> <br> 
+        </header>
 
-                const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) <br> <br>
+        <main class="caixa">
 
-                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) <br> <br>
-                
-                const unfold = (f, seed) => { <br>
-                const go = (f, seed, acc) => { <br>
-                const res = f(seed) <br>
+            <textarea name="teste" id="caixa__grande" cols="30" rows="10"></textarea>
+
+            <div class="area">
+                <img class="img__botoes" src="imagens/mac_buttons.png" alt="">
+                <p class="codigo">
+                    <br> <br>
+
+                    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) <br> <br>
+
+                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) <br> <br>
+
+                    const unfold = (f, seed) => { <br>
+                    const go = (f, seed, acc) => { <br>
+                    const res = f(seed) <br>
                     return res ? go(f, res[1], acc.concat([res[0]])) : acc <br>
-                } <br>
-                return go(f, seed, []) <br>
-                } <br>
-            </p>   
-           
-<!-- 
-        <textarea name="teste" id="caixa__media" cols="30" rows="10" > 
-            
+                    } <br>
+                    return go(f, seed, []) <br>
+                    } <br>
+                </p>
 
-                
-             const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+             
+            </div>
 
-             const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                
-             const unfold = (f, seed) => {
-             const go = (f, seed, acc) => {
-                const res = f(seed)
-                 return res ? go(f, res[1], acc.concat([res[0]])) : acc
-                }
-                return go(f, seed, [])
-                }
-        </textarea> -->
-      </div> 
+            <button class="visualizar">Visualizar com o highlight</button>
 
-        <button class="visualizar">Visualizar com o highlight</button>
-     
 
-    </main>
+        </main>
 
-    <section class="projeto">
-        <h2 class="titulo__projeto">seu projeto</h2>
+        <section class="projeto">
+            <h2 class="titulo__projeto">seu projeto</h2>
 
-        <input  class="nome__projeto" type="text" placeholder="Nome do seu projeto">
-        <textarea name="" id="descricao__projeto" placeholder="Descrição do seu projeto" cols="20" rows="8"></textarea>
+            <input class="nome__projeto" type="text" placeholder="Nome do seu projeto">
+            <textarea name="" id="descricao__projeto" placeholder="Descrição do seu projeto" cols="20" rows="8"></textarea>
 
-        <h2 class="titulo__personalizacao">personalização</h2>
-        <select name="" id="seletor" aria-placeholder="JavaScript">JavaScript</select>
-        <input type="color" name="" id="cor__azul" value="#6BD1FF">
-        <button class="salva__projeto">Salvar projeto</button>
+            <h2 class="titulo__personalizacao">personalização</h2>
+            <select name="" id="seletor" aria-placeholder="JavaScript">JavaScript</select>
+            <input type="color" name="" id="cor__azul" value="#6BD1FF">
+            <button class="salva__projeto">Salvar projeto</button>
 
-    </section>
-    
-    
-</body>
+        </section>
+
+
+    </body>
+
 </html>

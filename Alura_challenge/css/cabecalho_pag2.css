@@ -56,22 +56,25 @@
 .img__editor{
   
    margin-right: 16px;
-   margin-top: 16px;      
+   margin-top: 16px; 
+   background: rgba(80, 129, 251, 0.16);
+   border-radius: 16px;     
 }
 
 .img__comunidade{
     
    margin-right: 16px;
    margin-top: 16px;
-   background: rgba(80, 129, 251, 0.16); 
+   background: #5081FB;
    border-radius: 16px;
 }
 
  .editor_texto {   
-    color: white;
+    /* color: white; */
     text-decoration: none;
     font-size: 1em;
     margin-top: 16px; 
+    color: rgba(255, 255, 255, 0.56);
 } 
 
 .comunidade {
@@ -79,16 +82,5 @@
     text-decoration: none;
     font-size: 1em;
     margin-top: 16px;
-    color: rgba(255, 255, 255, 0.56);
-}
-
-
-@media (max-width: 768px) {
-
-    
-}
-
-
-@media (max-width: 400px){
-
+   
 }
