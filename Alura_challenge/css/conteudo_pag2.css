@@ -1,95 +1,310 @@
 .caixa{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute; 
+    width: 480px;
+    height: 400px;
+    left: 316px;
+    top: 128px;
 }
 
-#caixa__grande{
+#area__maior{
 
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
-    /* padding: 32px; */
-
     position: absolute;
-    width: 752px;
-    height: 366px;
-    left: 320px;
-    top: 128px;
-    resize: none;
-
-    background: #6BD1FF;
+    width: 480px;
+    height: 288px;
+    background:  #9AFF6B;
     border-radius: 8px;
+    resize: none;
 }
 
-.area{
+.area__menor{
     position:relative;
-    left: 354px;
-    top: 53px;
-    width: 688px;
-    height: 302px;
+    left: 26px;
+    top: 17px;
+    width: 432px;
+    height: 260px;
     background: #141414;
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
     border-radius: 8px;
-    color: white;
+    border: none;
+    color: white;   
 }
 
  .img__botoes{
     border-radius: 8px;
     background: #141414;
-
-     
-
 } 
+
 .codigo{
-    background: #141414;
+    background: #141414; 
     text-align: left;
     font-family: 'Inter', sans-serif;
     color: white;
-    font-size: 1em;
-    
+    font-size: 1em;    
 }
 
-/*  #caixa__media{
-    
-    
+.titulo__projeto{
+    position: relative;
+    left: 4.62%;
+    right: 4.62%;
+    top: 17.43%;
+    bottom: 50%;
     color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 1.3125em;
+    margin: 8px 0px;
+}
+
+.descricao__projeto{
+    position: relative;
+    left: 4.62%;
+    right: 4.62%;
+    top: 19.43%;
+    bottom: 50%;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    margin: 8px 0px;
+}
+
+.caixa_2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute; 
+    width: 480px;
+    height: 400px;
+    left: 820px;
+    top: 128px;
+}
+
+
+#area__maior2{
+
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
-     padding: 16px; 
     position: absolute;
-    width: 688px;
-    height: 302px;
-    left: 354px;
-    top: 170px;
+    width: 480px;
+    height: 288px;
+    background:  #6B83FF;
+    border-radius: 8px;
     resize: none;
+}
 
+.area__menor2{
+    position:relative;
+    left: 29px;
+    top: 17px;
+    width: 432px;
+    height: 260px;
     background: #141414;
-    $editor-shadow 
-
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
     border-radius: 8px;
+    border: none;
+    color: white;   
+}
 
-     Inside Auto Layout 
+ .img__botoes2{
+    border-radius: 8px;
+    background: #141414;
+} 
 
-     flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 10px 0px; 
-}  */
-
-.visualizar{
-       
-    position: absolute;
-    width: 760px;
-    height: 56px;
-    left: 320px;
-    top: 526px;
-    padding: 5px;
-    background: rgba(80, 129, 251, 0.08);
-    border-radius: 8px;   
-    border: none;  
+.codigo2{
+    background: #141414; 
+    text-align: left;
     font-family: 'Inter', sans-serif;
     color: white;
+    font-size: 1em;    
+}
+
+.titulo__projeto2{
+    position: relative;
+    left: 4.62%;
+    right: 4.62%;
+    top: 17.43%;
+    bottom: 50%;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 1.3125em;
+    margin: 8px 0px;
+}
+
+.descricao__projeto2{
+    position: relative;
+    left: 4.62%;
+    right: 4.62%;
+    top: 19.43%;
+    bottom: 50%;
+    color: white;
+    font-family: 'Inter', sans-serif;
     font-size: 1em;
-    
+    margin: 8px 0px;
+}
+
+.caixa_3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute; 
+    width: 480px;
+    height: 400px;
+    left: 316px;
+    top: 628px;
+}
+
+
+#area__maior3{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    position: absolute;
+    width: 480px;
+    height: 288px;
+    background:  #EBDF93;
+    border-radius: 8px;
+    resize: none;
+}
+
+.area__menor3{
+    position:relative;
+    left: 29px;
+    top: 17px;
+    width: 432px;
+    height: 260px;
+    background: #141414;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+    border: none;
+    color: white;   
+}
+
+ .img__botoes3{
+    border-radius: 8px;
+    background: #141414;
+} 
+
+.codigo3{
+    background: #141414; 
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 1em;    
+}
+
+.titulo__projeto3{
+    position: relative;
+    left: 4.62%;
+    right: 4.62%;
+    top: 17.43%;
+    bottom: 50%;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 1.3125em;
+    margin: 8px 0px;
+}
+
+.descricao__projeto3{
+    position: relative;
+    left: 4.62%;
+    right: 4.62%;
+    top: 19.43%;
+    bottom: 50%;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    margin: 8px 0px;
+}
+
+.caixa_4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute; 
+    width: 480px;
+    height: 400px;
+    left: 820px;
+    top: 628px;
+}
+
+
+#area__maior4{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    position: absolute;
+    width: 480px;
+    height: 288px;
+    background:  #F25B07;
+    border-radius: 8px;
+    resize: none;
+}
+
+.area__menor4{
+    position:relative;
+    left: 29px;
+    top: 17px;
+    width: 432px;
+    height: 260px;
+    background: #141414;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+    border: none;
+    color: white;   
+}
+
+ .img__botoes4{
+    border-radius: 8px;
+    background: #141414;
+} 
+
+.codigo4{
+    background: #141414; 
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 1em;    
+}
+
+.titulo__projeto4{
+    position: relative;
+    left: 4.62%;
+    right: 4.62%;
+    top: 17.43%;
+    bottom: 50%;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 1.3125em;
+    margin: 8px 0px;
+}
+
+.descricao__projeto4{
+    position: relative;
+    left: 4.62%;
+    right: 4.62%;
+    top: 19.43%;
+    bottom: 50%;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    margin: 8px 0px;
 }
