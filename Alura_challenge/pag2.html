@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/cabecalho_pag2.css">
     <link rel="stylesheet" href="css/conteudo_pag2.css">
@@ -87,17 +89,20 @@
                 <p class="codigo2">
                     <br> <br>
 
-                    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) <br> <br>
+                    @import <br>
+                     url('https://fonts.googleapis.com/css?family=Nova+Mono&display=swap'); <br> <br>
 
-                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) <br> <br>
+                    * { <br>
+                        box-sizing: border-box; <br>
+                    } <br> <br><br>
 
-                    const unfold = (f, seed) => { <br>
-                    const go = (f, seed, acc) => { <br>
-                    const res = f(seed) <br>
-                    return res ? go(f, res[1], acc.concat([res[0]])) : acc <br>
-                    } <br>
-                    return go(f, seed, []) <br>
-                    } <br>
+                    body { <br> <br> 
+                        min-height: 100vh; <br>
+                        background-color: #18181c; <br>
+                        display: flex; <br>
+                        align-items: center; <br>
+                    }    
+
                 </p>
 
             
@@ -117,17 +122,15 @@
                 <p class="codigo3">
                     <br> <br>
 
-                    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) <br> <br>
+                    let textureOldGoldURL = "https://assets.codepen.io/911157/matcapCop.jpg"; <br>
+                    let modelURL = <br> "https://assets.codepen.io/911157/creativityDoodle_by_Anna_the_Scavenger <br>.glb"; 
+                    <br><br>
+                    // LANDSCAPE / PORTRAIT <br><br> <br><br>
 
-                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) <br> <br>
+                    let isMobile = /(Android|iPhone|iOS|iPod|iPad)/i.test(navigator.userAgent);
+                    let windowRatio = window.innerWidth / window.innerHeight;
+                    let isLandscape = (windowRatio > 1) ? true : false;
 
-                    const unfold = (f, seed) => { <br>
-                    const go = (f, seed, acc) => { <br>
-                    const res = f(seed) <br>
-                    return res ? go(f, res[1], acc.concat([res[0]])) : acc <br>
-                    } <br>
-                    return go(f, seed, []) <br>
-                    } <br>
                 </p>
 
             

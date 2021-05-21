@@ -45,9 +45,9 @@
 .codigo{
     background: #141414; 
     text-align: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
-    font-size: 1em;    
+    font-size: 0.75em;    
 }
 
 .titulo__projeto{
@@ -122,10 +122,10 @@
 
 .codigo2{
     background: #141414; 
-    text-align: left;
-    font-family: 'Inter', sans-serif;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
     color: white;
-    font-size: 1em;    
+    font-size: 0.75em;    
 }
 
 .titulo__projeto2{
@@ -201,9 +201,9 @@
 .codigo3{
     background: #141414; 
     text-align: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
-    font-size: 1em;    
+    font-size: 0.75em;    
 }
 
 .titulo__projeto3{
@@ -279,9 +279,9 @@
 .codigo4{
     background: #141414; 
     text-align: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
-    font-size: 1em;    
+    font-size: 0.75em;    
 }
 
 .titulo__projeto4{

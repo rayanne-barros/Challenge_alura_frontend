@@ -17,10 +17,7 @@
 }
 
 .nome__projeto{
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: static; */
+  
     padding: 0px;
 
     
@@ -33,15 +30,11 @@
     background: rgba(255, 255, 255, 0.16);
     border-radius: 8px;
     border: none;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 0px 0px;
+   
 }
 
 .nome__projeto::placeholder{
-    color: rgba(255, 255, 255, 1);    
+    color: rgba(255, 255, 255, 0.64);    
     font-size: 1em;
     font-family: 'Inter', sans-serif;
 }
@@ -49,9 +42,7 @@
 #descricao__projeto{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 0px;
-    position: static;
     width: 200px;
     height: 70px;
     left: 0px;
@@ -60,15 +51,11 @@
     background: rgba(255, 255, 255, 0.16);
     border-radius: 8px;
     border: none;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
     margin-top: 16px;
 }
 
 #descricao__projeto::placeholder{
-    color: rgba(255, 255, 255, 1);    
+    color: rgba(255, 255, 255, 0.64);    
     font-size: 1em;
     font-family: 'Inter', sans-serif;
   
@@ -87,18 +74,13 @@
 }
 
 #seletor{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-
-    position: static;
+    
     width: 200px;
     height: 56px;
     
     left: 0px;
     top: 0px;
-    color: white;
+    color:  rgba(255, 255, 255, 0.64);
     background: rgba(255, 255, 255, 0.16);
     border-radius: 8px;
     border: none;
@@ -108,6 +90,14 @@
     flex-grow: 0;
     margin: 0px 0px;
 
+}
+
+.js__personalizacao{
+    height: 18px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75em;      
+    color: rgba(255, 255, 255, 0.16); 
+    margin-top: 40px;
 }
 
 #cor__azul{
