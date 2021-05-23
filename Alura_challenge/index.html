@@ -22,18 +22,24 @@
         <header class="cabecalho">
 
             <div class="container">
-                <nav class="cabecalho__nav">
+                <nav class="cabecalho__nav" >
                     <img class="cabecalho__nav_logo" src="imagens/Logo.svg" alt="Logo da Plataforma Alura DEV">
 
                     <input class="cabecalho__nav_pesquisa" type="text" placeholder="Busque por algo">
 
                     <img class="cabecalho__nav_foto" src="imagens/author.png" alt="Foto do usuário">
 
+                    <div id="menu__botao">
+                        <div id="bar1" class="bar" ></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
                 </nav>
-
+                
             </div>
 
-            <nav class="menu">
+            
+            <nav class="menu">               
 
                 <h2 class="titulo_menu">menu</h2>
                 <ul class="lista__menu">
@@ -48,6 +54,7 @@
                 </ul>
 
             </nav>
+
 
         </header>
 
@@ -88,9 +95,13 @@
             <textarea name="" id="descricao__projeto" placeholder="Descrição do seu projeto" cols="20" rows="8"></textarea>
 
             <h2 class="titulo__personalizacao">personalização</h2>
-            <select name="" id="seletor" aria-placeholder="JavaScript">
-            <option class="js__personalizacao" value="0">JavaScript</option> </select>
-            <input type="color" name="" id="cor__azul" value="#6BD1FF">
+            <div class="projeto__divisao">
+
+                <select name="" id="seletor" aria-placeholder="JavaScript">
+                <option class="js__personalizacao" value="0">JavaScript</option> </select>
+                <input type="color" name="" id="cor__azul" value="#6BD1FF">
+            </div>
+
             <button class="salva__projeto">Salvar projeto</button>
 
         </section>

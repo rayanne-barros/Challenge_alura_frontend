@@ -93,3 +93,42 @@
     font-size: 1em;
     
 }
+
+@media (max-width: 768px) {
+
+    #caixa__grande{
+        left: 30px;
+        width: 704px;
+    }
+
+    .area{
+        width: 640px;
+        left: 65px;
+    }
+
+    .visualizar{
+        width: 704px;
+        left: 30px;
+    }
+}
+
+@media (max-width: 375px){
+    #caixa__grande{
+        left: 15px;
+        width: 343px;
+        height: 492px;
+    }
+
+    .area{
+        left: 50px;
+        top: 66px;
+        width: 279px;
+        height: 428px;
+    }
+
+    .visualizar{
+        width: 343px;
+        left: 15px;
+        top: 640px;
+    }
+}
