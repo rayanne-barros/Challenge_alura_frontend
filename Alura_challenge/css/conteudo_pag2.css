@@ -308,3 +308,187 @@
     font-size: 1em;
     margin: 8px 0px;
 }
+
+@media (max-width: 768px) {
+
+    .caixa{
+        width: 704px;
+        height: 518px;
+        left: 10px;
+    }
+    
+    #area__maior{
+        left: 10px;
+        width: 704px;
+        height: 342px;
+    }
+
+    .area__menor{
+        left: 36px;
+        top: 27px;
+        width: 656px;
+        height: 294px;
+    }
+
+    .caixa_2{
+        display: block;
+
+        width: 704px;
+        height: 518px;
+        left: 10px;
+        top: 650px;
+
+    }
+    
+    #area__maior2{
+        left: 10px;
+        width: 704px;
+        height: 342px;
+    }
+
+    .area__menor2{
+        left: 36px;
+        top: 27px;
+        width: 656px;
+        height: 294px;
+    }
+
+    .caixa_3{
+        display: block;
+
+        width: 704px;
+        height: 518px;
+        left: 10px;
+        top: 1170px;
+
+    }
+    
+    #area__maior3{
+        left: 10px;
+        width: 704px;
+        height: 342px;
+    }
+
+    .area__menor3{
+        left: 36px;
+        top: 27px;
+        width: 656px;
+        height: 294px;
+    }
+
+    .caixa_4{
+        display: block;
+
+        width: 704px;
+        height: 518px;
+        left: 10px;
+        top: 1680px;
+
+    }
+    
+    #area__maior4{
+        left: 10px;
+        width: 704px;
+        height: 342px;
+    }
+
+    .area__menor4{
+        left: 36px;
+        top: 27px;
+        width: 656px;
+        height: 294px;
+    }
+   
+}
+
+@media (max-width: 375px) {
+
+    .caixa{
+        width: 343px;
+        height: 578px;
+        left: 5px;
+    }
+    
+    #area__maior{
+        left: 5px;
+        width: 343px;
+        height: 402px;
+    }
+
+    .area__menor{
+        left: 36px;
+        top: 27px;
+        width: 295px;
+        height: 354px;
+    }
+
+    .caixa_2{
+        display: block;
+
+        width: 343px;
+        height: 578px;
+        left: 5px;
+        top: 680px;
+
+    }
+    
+    #area__maior2{
+        left: 5px;
+        width: 343px;
+        height: 402px;
+    }
+
+    .area__menor2{
+        left: 36px;
+        top: 27px;
+        width: 295px;
+        height: 354px;
+    }
+
+    .caixa_3{
+        display: block;
+
+        width: 343px;
+        height: 518px;
+        left: 5px;
+        top: 1260px;
+
+    }
+    
+    #area__maior3{
+        left: 5px;
+        width: 343px;
+       height: 402px;
+    }
+
+    .area__menor3{
+        left: 36px;
+        top: 27px;
+        width: 295px;
+        height: 354px;
+    }
+
+    .caixa_4{
+        display: block;
+
+        width: 343px;
+        height: 578px;
+        left: 5px;
+        top: 1780px;
+
+    }
+    
+    #area__maior4{
+        left: 10px;
+        width: 343px;
+        height: 402px;
+    }
+
+    .area__menor4{
+        left: 36px;
+        top: 27px;
+        width: 295px;
+        height: 354px;
+    }
+   
+}
