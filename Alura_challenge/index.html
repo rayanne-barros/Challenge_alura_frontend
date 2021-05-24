@@ -60,27 +60,28 @@
 
         <main class="caixa">
 
-            <textarea name="teste" id="caixa__grande" cols="30" rows="10"></textarea>
+            <div class="caixa__grande">
 
-            <div class="area">
-                <img class="img__botoes" src="imagens/mac_buttons.png" alt="">
-                <p class="codigo">
-                    <br> <br>
+                <div class="area">
+                    <img class="img__botoes" src="imagens/mac_buttons.png" alt="">                    
+                    
+                </div>
 
-                    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) <br> <br>
+                <textarea name="teste" id="caixa__media" cols="30" rows="10">
+                    
+                    
+                    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) 
 
-                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) <br> <br>
+                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) 
 
-                    const unfold = (f, seed) => { <br>
-                    const go = (f, seed, acc) => { <br>
-                    const res = f(seed) <br>
-                    return res ? go(f, res[1], acc.concat([res[0]])) : acc <br>
-                    } <br>
-                    return go(f, seed, []) <br>
-                    } <br>
-                </p>
-
-             
+                    const unfold = (f, seed) => { 
+                    const go = (f, seed, acc) => { 
+                    const res = f(seed) 
+                    return res ? go(f, res[1], acc.concat([res[0]])) : acc 
+                    } 
+                    return go(f, seed, []) 
+                    } 
+                </textarea>
             </div>
 
             <button class="visualizar">Visualizar com o highlight</button>
