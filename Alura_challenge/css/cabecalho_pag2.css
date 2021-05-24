@@ -12,6 +12,13 @@
     justify-content: space-between;
 }
 
+.divisao_input{
+    width: 752px;
+    display: flex;
+    justify-self: unset;
+    justify-content: center;
+
+}
 
 .cabecalho__nav_pesquisa{
     width: 752px;
@@ -28,10 +35,19 @@
     font-family: 'Inter', sans-serif;
 }
 
+.lupa{
+    border: none;
+} 
+
+.lupa_img{
+     display: none;
+    background: transparent;
+}
+
 #menu__botao{
     width: 35px;
     height: 30px;
-    margin: 30px 0 20px 20px;
+    margin: 10px 0 10px 20px;
     cursor: pointer;
     display: none;
 }
@@ -138,7 +154,20 @@
     
 }
 
-
 @media (max-width: 375px){
+    
+    .divisao_input{
+        justify-content: flex-end;
+    }
+    .cabecalho__nav_pesquisa{
+        display: none;
+    }
+    .lupa_img{
+        display: flex;
+    }
 
+    #menu__botao{
+        width: 70px;
+        align-content: center;
+    }
 }
