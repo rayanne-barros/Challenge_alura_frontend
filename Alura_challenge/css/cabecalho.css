@@ -24,7 +24,7 @@
     width: 752px;
     height: 56px;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.16);    
+    background: rgba(255, 255, 255, 0.16);    
     border: none;   
 }
 
@@ -35,7 +35,11 @@
     font-family: 'Inter', sans-serif;
 }
 
- .lupa{
+.cabecalho__nav_pesquisa:hover{
+    background: rgba(255, 255, 255, 0.24);
+}
+
+.lupa{
    border: none;
 } 
 .lupa_img{
@@ -43,12 +47,23 @@
    background: transparent;
 }
 
+.cabecalho__nav_foto:hover{
+    background: rgba(255, 255, 255, 0.08);
+}
+
 #menu__botao{
     width: 40px;
     height: 30px;
     margin: 10px 0 10px 20px;
     cursor: pointer;
-    display: none;
+    display: none;   
+}
+
+#menu__botao:hover{
+    background: rgba(80, 129, 251, 0,08);
+}
+#menu__botao:active{
+    background: rgba(80, 129, 251, 0,16);
 }
 
 .bar{
@@ -94,7 +109,7 @@
     align-items: center;
 }
 
-.img__editor{
+.img__editor, .img__comunidade{
   
    margin-right: 16px;
    margin-top: 16px;  
@@ -102,16 +117,16 @@
    border-radius: 16px;   
 }
 
-.img__editor:hover {
+.img__editor:hover, .img__comunidade:hover {
     background: rgba(80, 129, 251, 0.64);
 }
 
-.img__editor:active{
+.img__editor:active , .img__comunidade:active{
     background: rgba(80, 129, 251, 1);
 
 }
 
-.img__comunidade{
+/* .img__comunidade{
     
    margin-right: 16px;
    margin-top: 16px;
@@ -126,21 +141,30 @@
 .img__comunidade:active{
     background: rgba(80, 129, 251, 1);
 
-}
-.editor_texto {   
+} */
+.editor_texto, .comunidade {   
     color: rgba(255, 255, 255, 0.56);
     text-decoration: none;
     font-size: 1em;
     margin-top: 16px; 
 } 
 
-.comunidade {
-    color: white;
+/* .comunidade {
+    
     text-decoration: none;
     font-size: 1em;
     margin-top: 16px;
     color: rgba(255, 255, 255, 0.56);
+} */
+
+.editor_texto:hover, .comunidade:hover{
+    color: rgba(255, 255, 255, 0.86);
 }
+
+.editor_texto:active, .comunidade:active{
+    color: white;
+}
+
 
 
 @media (max-width: 768px) {
@@ -155,15 +179,21 @@
     .cabecalho__nav_pesquisa{
         width: 431px;
     }
-
+    
     #menu__botao{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        align-content: center;       
-        
+        align-content: center;         
     }
-       
+    
+    /* #menu__botao:hover{
+        background: rgba(80, 129, 251, 0,08);
+    }
+    #menu__botao:active{
+        background: rgba(80, 129, 251, 0,16);
+    } */
+
     .menu{
         display: none;
     }
@@ -188,4 +218,11 @@
         width: 70px;
         align-content: center;
     }
+
+    /* #menu__botao:hover{
+        background: rgba(80, 129, 251, 0,08);
+    }
+    #menu__botao:active{
+        background: rgba(80, 129, 251, 0,16);
+    } */
 }
