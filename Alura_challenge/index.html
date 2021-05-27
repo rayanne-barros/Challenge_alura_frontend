@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/paraiso.css">
         <link rel="stylesheet" href="css/cabecalho.css">
         <link rel="stylesheet" href="css/conteudo-principal.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -65,27 +66,17 @@
         <main class="caixa">
 
             <div class="caixa__grande">
-
+                 
                 <div class="area">
-                    <img class="img__botoes" src="imagens/mac_buttons.png" alt="">                    
+                    <!-- <img class="img__botoes" src="imagens/mac_buttons.png" alt="">                   -->
                     
-                </div>
-
-                <textarea name="teste" id="caixa__media" cols="30" rows="10">
-                    
-                    
-                    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) 
-
-                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) 
-
-                    const unfold = (f, seed) => { 
-                    const go = (f, seed, acc) => { 
-                    const res = f(seed) 
-                    return res ? go(f, res[1], acc.concat([res[0]])) : acc 
-                    } 
-                    return go(f, seed, []) 
-                    } 
-                </textarea>
+                    <code class="preview hljs" contenteditable="true" aria-label="editor">
+                       
+                        
+                    </code> 
+                </div> 
+                
+               
             </div>
 
             <button class="visualizar">Visualizar com o highlight</button>
@@ -103,15 +94,21 @@
             <div class="projeto__divisao">
 
                 <select name="" id="seletor" aria-placeholder="JavaScript">
-                <option class="js__personalizacao" value="0">JavaScript</option> </select>
-                <input type="color" name="" id="cor__azul" value="#6BD1FF">
+                <option value="javascript">JavaScript</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+            
+                </select>
+                <input type="color" name="" id="cor" value="#6BD1FF" onchange=" mudaColor()">
             </div>
 
             <button class="salva__projeto">Salvar projeto</button>
 
         </section>
 
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script> 
+        <script src="sintaxe.js"></script>
+        <script src="js/mudaCor.js"></script>
     </body>
 
 </html>

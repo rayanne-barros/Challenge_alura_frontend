@@ -27,34 +27,27 @@
     background: #141414;
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
     border-radius: 8px;
+    background-image: url("mac_buttons.svg");
+    background-repeat: no-repeat;
+    
 }
 
- .img__botoes{
-    border-radius: 8px;
-    background: #141414;
-} 
 
-#caixa__media{
-    color: white;
+.preview{
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
     position: relative;
     width: 650px;
-    height: 280px;
-    left: 49px;
-    top: 33px;
-    border: none;
-    resize: none;
+    height: 267px;
+    left: 15px;
+    top: 20px;
     background: transparent;
-    border-radius: 8px;
+    border: none;
     margin: 10px 0px;
-
-}
-.codigo{
-    background: #141414;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 1em;
-    
+    white-space: pre-wrap;
+    overflow: auto;
+    box-sizing: border-box;
 }
 
 .visualizar{       

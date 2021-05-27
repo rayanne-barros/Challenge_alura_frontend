@@ -77,6 +77,8 @@
     color:  rgba(255, 255, 255, 0.64);
     background: rgba(255, 255, 255, 0.16);
     border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75em;   
     border: none;
 }
 
@@ -84,15 +86,15 @@
     background: rgba(255, 255, 255, 0.24);
 }
 
-.js__personalizacao{
+/* .js__personalizacao{
     height: 18px;
     font-family: 'Inter', sans-serif;
     font-size: 0.75em;      
     color: rgba(255, 255, 255, 0.16); 
     margin-top: 40px;
-}
+} */
 
-#cor__azul{
+#cor{
     background: rgba(196, 196, 196, 0.01);
     border-radius: 8px;
     border: 1px solid #FFFFFF;
