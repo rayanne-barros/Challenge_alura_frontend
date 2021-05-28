@@ -34,11 +34,27 @@
 
                     <img class="cabecalho__nav_foto" src="imagens/author.png" alt="Foto do usuário">
 
-                    <div id="menu__botao">
-                        <div id="bar1" class="bar" ></div>
-                        <div id="bar2" class="bar"></div>
-                        <div id="bar3" class="bar"></div>
-                    </div>
+                    <div class="menu__hamburguer" id="menu__hamburguer">
+                        <div id="menu__botao" onclick="menuOnClick()" >
+                            <div id="bar1" class="bar" ></div>
+                            <div id="bar2" class="bar"></div>
+                            <div id="bar3" class="bar"></div>
+                        </div>
+                        <ul class="lista__menu  lista__menu_hamburguer" id="lista__menu_hamburguer">
+                            <li class="itens__lista  lista__hamburguer">
+                                <img class="img__editor" src="imagens/Icon.svg" alt="Logo do editor de texto">
+                                <a class="editor_texto" href="index.html">Editor de Texto</a>
+                            </li>
+                            <li class="itens__lista lista__hamburguer">
+                                <img class="img__comunidade" src="imagens/comunidade.png" alt="Logo da comunidade">
+                                <a class="comunidade" href="pag2.html">Comunidade</a>
+                            </li>
+                            <div class="cliente_hamburguer">
+                                <hr>
+                                <img class="cliente__foto" src="imagens/author.png" alt="Foto do usuário">
+                            </div>
+                        </ul>
+                    </div> 
                 </nav>
                 
             </div>
@@ -109,6 +125,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script> 
         <script src="sintaxe.js"></script>
         <script src="js/mudaCor.js"></script>
+        <script src="js/menuHamburguer.js"></script>
     </body>
 
 </html>
