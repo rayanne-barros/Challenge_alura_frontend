@@ -24,7 +24,7 @@
     width: 752px;
     height: 56px;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.16);    
+    background: rgba(255, 255, 255, 0.16);    
     border: none;   
 }
 
@@ -35,21 +35,35 @@
     font-family: 'Inter', sans-serif;
 }
 
-.lupa{
-    border: none;
-} 
+.cabecalho__nav_pesquisa:hover{
+    background: rgba(255, 255, 255, 0.24);
+}
 
+.lupa{
+   border: none;
+} 
 .lupa_img{
-     display: none;
-    background: transparent;
+    display: none;
+   background: transparent;
+}
+
+.cabecalho__nav_foto:hover{
+    background: rgba(255, 255, 255, 0.08);
 }
 
 #menu__botao{
-    width: 35px;
+    width: 40px;
     height: 30px;
     margin: 10px 0 10px 20px;
     cursor: pointer;
-    display: none;
+    display: none;   
+}
+
+#menu__botao:hover{
+    background: rgba(80, 129, 251, 0,08);
+}
+#menu__botao:active{
+    background: rgba(80, 129, 251, 0,16);
 }
 
 .bar{
@@ -67,6 +81,66 @@
 
 #bar3{
     transform: translateY(4px);
+}
+
+.menu__hamburguer{
+    display: none;
+    border-radius: 8px;
+    width: auto;
+    min-width: 48px;
+    height: auto;  
+}
+
+.lista__menu_hamburguer{
+    display: none;
+    background: #2D415B;
+    width: 200px;
+    height: 166vh;
+    border-radius: 8px;
+    padding: 1rem;
+    position: absolute;
+    top: 15%; 
+    right: 1px;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+    transition: right 200ms linear;
+    z-index:2;
+}
+
+.change{
+    display: block;
+}
+
+.change .bar{
+    background: white;
+}
+
+.change #bar1{
+    transform: translateY(4px) rotate(-45deg);
+
+}
+
+.change #bar2{
+    opacity: 0;
+}
+
+.change #bar3{
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.change_hamburguer{
+    transform: translate(-60px, -30px);
+}
+
+
+
+.cliente__hamburguer{
+    
+} 
+
+.cliente__foto{
+    position: absolute;
+    background: transparent;
+    margin-top: 10%;
 }
 
 .menu{
@@ -92,39 +166,68 @@
 .itens__lista {
     display: flex;    
     align-items: center;
+    background:transparent;
 }
 
-.img__editor{
+
+
+.img__editor, .img__comunidade{
   
    margin-right: 16px;
-   margin-top: 16px; 
+   margin-top: 16px;  
    background: rgba(80, 129, 251, 0.16);
-   border-radius: 16px;     
+   border-radius: 16px;   
 }
 
-.img__comunidade{
+.img__editor:hover, .img__comunidade:hover {
+    background: rgba(80, 129, 251, 0.64);
+}
+
+.img__editor:active , .img__comunidade:active{
+    background: rgba(80, 129, 251, 1);
+
+}
+
+/* .img__comunidade{
     
    margin-right: 16px;
    margin-top: 16px;
-   background: #5081FB;
+   background: rgba(80, 129, 251, 0.16); 
    border-radius: 16px;
 }
 
- .editor_texto {   
-    /* color: white; */
+.img__comunidade:hover {
+    background: rgba(80, 129, 251, 0.64);
+}
+
+.img__comunidade:active{
+    background: rgba(80, 129, 251, 1);
+
+} */
+.editor_texto, .comunidade {   
+    color: rgba(255, 255, 255, 0.56);
     text-decoration: none;
     font-size: 1em;
     margin-top: 16px; 
-    color: rgba(255, 255, 255, 0.56);
 } 
 
-.comunidade {
-    color: white;
+/* .comunidade {
+    
     text-decoration: none;
     font-size: 1em;
     margin-top: 16px;
-   
+    color: rgba(255, 255, 255, 0.56);
+} */
+
+.editor_texto:hover, .comunidade:hover{
+    color: rgba(255, 255, 255, 0.86);
 }
+
+.editor_texto:active, .comunidade:active{
+    color: white;
+}
+
+
 
 @media (max-width: 768px) {
 
@@ -138,21 +241,36 @@
     .cabecalho__nav_pesquisa{
         width: 431px;
     }
-
+    
+    
     #menu__botao{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        align-content: center;       
-        
+        align-content: center;         
     }
-       
+
+        
+        
+    /* #menu__botao:hover{
+        background: rgba(80, 129, 251, 0,08);
+    }
+    #menu__botao:active{
+        background: rgba(80, 129, 251, 0,16);
+    } */
+
     .menu{
         display: none;
     }
 
-    
+    .menu__hamburguer{
+        display: block;
+        
+    }
+
+  
 }
+
 
 @media (max-width: 375px){
     
@@ -167,7 +285,14 @@
     }
 
     #menu__botao{
-        width: 70px;
+        
         align-content: center;
     }
+
+    /* #menu__botao:hover{
+        background: rgba(80, 129, 251, 0,08);
+    }
+    #menu__botao:active{
+        background: rgba(80, 129, 251, 0,16);
+    } */
 }

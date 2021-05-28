@@ -242,13 +242,15 @@
         width: 431px;
     }
     
+    
     #menu__botao{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         align-content: center;         
     }
-    
+
+        
         
     /* #menu__botao:hover{
         background: rgba(80, 129, 251, 0,08);
@@ -283,7 +285,7 @@
     }
 
     #menu__botao{
-        width: 70px;
+        
         align-content: center;
     }
 
