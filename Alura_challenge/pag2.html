@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/cabecalho_pag2.css">
     <link rel="stylesheet" href="css/conteudo_pag2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     
 </head>
 <body>
+    
     <header class="cabecalho">
 
         <div class="container">
@@ -93,9 +95,8 @@
 
             <div class="icones_interacao">
                 <div class="interatividade">
-                    <a href="#" class="interatividade__link"><img src="imagens/comentario.svg" alt="Ícone de comentário" class="icone"> 9 </a>
-                    
-                    <a href="#" class="interatividade__link"><img src="imagens/like.svg" alt="Ícone de curtida" class="icone"> 9</a>
+                    <i class="fas fa-comment icone"></i><p class="interatividade__numeros">9</p>
+                    <i class="fas fa-heart icone" id="like"></i><p class="interatividade__numeros">9</p>
                 </div>
                 <!-- <div class="foto">
                     <img src="imagens/author.svg" alt="Foto do usuário">
@@ -108,92 +109,89 @@
         <div class="caixa_2">
             
             
-            <textarea name="area__maior2" id="area__maior2" cols="30" rows="10"></textarea>
-            <div class="area__menor2">
-                <img class="img__botoes2" src="imagens/mac_buttons.png" alt="">
-
-                <!-- <input  type="text"> -->
-                <p class="codigo2">
-                    <br> <br>
-
-                    @import <br>
-                     url('https://fonts.googleapis.com/css?family=Nova+Mono&display=swap'); <br> <br>
-
-                    * { <br>
-                        box-sizing: border-box; <br>
-                    } <br> <br><br>
-
-                    body { <br> <br> 
-                        min-height: 100vh; <br>
-                        background-color: #18181c; <br>
-                        display: flex; <br>
-                        align-items: center; <br>
-                    }    
-
-                </p>
-
-            
+            <div class="caixa__grande2">
+                 
+                <div class="area">
+                                      
+                    <code class="preview hljs" contenteditable="true" aria-label="editor">
+                       
+                        
+                    </code> 
+                </div> 
+                               
             </div>
-            <h2 class="titulo__projeto2">Título do projeto</h2>
-            <p class="descricao__projeto2">Essa é a descrição do meu projeto</p>
+
+            <h2 class="titulo__projeto">Título do projeto</h2>
+            <p class="descricao__projeto">Essa é a descrição do meu projeto</p>
+
+            <div class="icones_interacao">
+                <div class="interatividade">
+                    <i class="fas fa-comment icone"></i><p class="interatividade__numeros">9</p>
+                    <i class="fas fa-heart icone" id="like"></i><p class="interatividade__numeros">9</p>
+                </div>
+                <!-- <div class="foto">
+                    <img src="imagens/author.svg" alt="Foto do usuário">
+                </div>                 -->
+                <img src="imagens/author.svg" alt="Foto do usuário" class="foto">
+            </div>
         </div>
 
         <div class="caixa_3">
             
-            
-            <textarea name="area__maior3" id="area__maior3" cols="30" rows="10"></textarea>
-            <div class="area__menor3">
-                <img class="img__botoes3" src="imagens/mac_buttons.png" alt="">
-
-                
-                <p class="codigo3">
-                    <br> <br>
-
-                    let textureOldGoldURL = "https://assets.codepen.io/911157/matcapCop.jpg"; <br>
-                    let modelURL = <br> "https://assets.codepen.io/911157/creativityDoodle_by_Anna_the_Scavenger <br>.glb"; 
-                    <br><br>
-                    // LANDSCAPE / PORTRAIT <br><br> <br><br>
-
-                    let isMobile = /(Android|iPhone|iOS|iPod|iPad)/i.test(navigator.userAgent);
-                    let windowRatio = window.innerWidth / window.innerHeight;
-                    let isLandscape = (windowRatio > 1) ? true : false;
-
-                </p>
-
-            
+            <div class="caixa__grande3">
+                 
+                <div class="area">
+                                      
+                    <code class="preview hljs" contenteditable="true" aria-label="editor">
+                       
+                        
+                    </code> 
+                </div> 
+                               
             </div>
-            <h2 class="titulo__projeto3">Título do projeto</h2>
-            <p class="descricao__projeto3">Essa é a descrição do meu projeto</p>
+            
+            <h2 class="titulo__projeto">Título do projeto</h2>
+            <p class="descricao__projeto">Essa é a descrição do meu projeto</p>
+
+            <div class="icones_interacao">
+                <div class="interatividade">
+                    <i class="fas fa-comment icone"></i><p class="interatividade__numeros">9</p>
+                    <i class="fas fa-heart icone" id="like"></i><p class="interatividade__numeros">9</p>
+                </div>
+                <!-- <div class="foto">
+                    <img src="imagens/author.svg" alt="Foto do usuário">
+                </div>                 -->
+                <img src="imagens/author.svg" alt="Foto do usuário" class="foto">
+            </div>
         </div>
 
         <div class="caixa_4">
             
-            
-            <textarea name="area__maior4" id="area__maior4" cols="30" rows="10"></textarea>
-            <div class="area__menor4">
-                <img class="img__botoes4" src="imagens/mac_buttons.png" alt="">
-
-               
-                <p class="codigo4">
-                    <br> <br>
-
-                    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) <br> <br>
-
-                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) <br> <br>
-
-                    const unfold = (f, seed) => { <br>
-                    const go = (f, seed, acc) => { <br>
-                    const res = f(seed) <br>
-                    return res ? go(f, res[1], acc.concat([res[0]])) : acc <br>
-                    } <br>
-                    return go(f, seed, []) <br>
-                    } <br>
-                </p>
-
-            
+            <div class="caixa__grande4">
+                 
+                <div class="area">
+                                      
+                    <code class="preview hljs" contenteditable="true" aria-label="editor">
+                       
+                        
+                    </code> 
+                </div> 
+                               
             </div>
-            <h2 class="titulo__projeto4">Título do projeto</h2>
-            <p class="descricao__projeto4">Essa é a descrição do meu projeto</p>
+
+            <h2 class="titulo__projeto">Título do projeto</h2>
+            <p class="descricao__projeto">Essa é a descrição do meu projeto</p>
+
+            <div class="icones_interacao">
+                <div class="interatividade">
+                    <i class="fas fa-comment icone"></i><p class="interatividade__numeros">9</p>
+                    <i class="fas fa-heart icone" id="like"></i><p class="interatividade__numeros">9</p>
+                </div>
+                <!-- <div class="foto">
+                    <img src="imagens/author.svg" alt="Foto do usuário">
+                </div>                 -->
+                <img src="imagens/author.svg" alt="Foto do usuário" class="foto">
+            </div>
         </div> 
 
     </main>
@@ -201,6 +199,8 @@
     <script src="sintaxe.js"></script>
     <script src="js/mudaCor.js"></script>
     <script src="js/menuHamburguer.js"></script>
+    <script src="js/comunidade.js"></script>
+    
 
 </body>
 </html>

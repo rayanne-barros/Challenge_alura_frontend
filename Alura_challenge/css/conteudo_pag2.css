@@ -80,10 +80,24 @@
 }
 
 .icones_interacao{
+    display: flex;
     width: 432px;
     height: 70px;
     position: relative;
     top: 88%;
+    left: 1%;
+    opacity: 0;
+}
+
+.icones_interacao:hover{
+    /* display: flex;
+    width: 432px;
+    height: 70px;
+    position: relative;
+    top: 88%;
+    left: 1%; */
+    opacity: 1;
+   
 }
 
 .interatividade{
@@ -93,17 +107,24 @@
     right: 16px;
     width: 216px;
     height: 50px;
-    justify-content: space-around;
-
+    left: 17px;
 }
 
-.interatividade__link{
-    text-decoration: none;
+.interatividade__numeros{
+
+    margin-right: 8%;
     color: white;
 }
 
 .icone{
     margin-right: 5px;
+    width: 17px;
+    color: white;
+    
+}
+
+#heart{
+    color: white;
 }
 
 .foto{
@@ -128,70 +149,19 @@
     top: 128px;
 }
 
-
-#area__maior2{
+.caixa__grande2{
 
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
+    /* padding: 32px; */
     position: absolute;
     width: 480px;
     height: 288px;
-    background:  #6B83FF;
+    background: #6B83FF;
     border-radius: 8px;
-    resize: none;
 }
 
-.area__menor2{
-    position:relative;
-    left: 29px;
-    top: 17px;
-    width: 432px;
-    height: 260px;
-    background: #141414;
-    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
-    border-radius: 8px;
-    border: none;
-    color: white;   
-}
-
- .img__botoes2{
-    border-radius: 8px;
-    background: #141414;
-} 
-
-.codigo2{
-    background: #141414; 
-    text-align: justify;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 0.75em;    
-}
-
-.titulo__projeto2{
-    position: relative;
-    left: 4.62%;
-    right: 4.62%;
-    top: 17.43%;
-    bottom: 50%;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-    font-size: 1.3125em;
-    margin: 8px 0px;
-}
-
-.descricao__projeto2{
-    position: relative;
-    left: 4.62%;
-    right: 4.62%;
-    top: 19.43%;
-    bottom: 50%;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 1em;
-    margin: 8px 0px;
-}
 
 .caixa_3{
     display: flex;
@@ -206,69 +176,17 @@
     top: 628px;
 }
 
-
-#area__maior3{
+.caixa__grande3{
 
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
+    /* padding: 32px; */
     position: absolute;
     width: 480px;
     height: 288px;
-    background:  #EBDF93;
+    background: #EBDF93;
     border-radius: 8px;
-    resize: none;
-}
-
-.area__menor3{
-    position:relative;
-    left: 29px;
-    top: 17px;
-    width: 432px;
-    height: 260px;
-    background: #141414;
-    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
-    border-radius: 8px;
-    border: none;
-    color: white;   
-}
-
- .img__botoes3{
-    border-radius: 8px;
-    background: #141414;
-} 
-
-.codigo3{
-    background: #141414; 
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 0.75em;    
-}
-
-.titulo__projeto3{
-    position: relative;
-    left: 4.62%;
-    right: 4.62%;
-    top: 17.43%;
-    bottom: 50%;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-    font-size: 1.3125em;
-    margin: 8px 0px;
-}
-
-.descricao__projeto3{
-    position: relative;
-    left: 4.62%;
-    right: 4.62%;
-    top: 19.43%;
-    bottom: 50%;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 1em;
-    margin: 8px 0px;
 }
 
 .caixa_4{
@@ -284,70 +202,19 @@
     top: 628px;
 }
 
-
-#area__maior4{
+.caixa__grande4{
 
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
+    /* padding: 32px; */
     position: absolute;
     width: 480px;
     height: 288px;
-    background:  #F25B07;
+    background: #F25B07;
     border-radius: 8px;
-    resize: none;
 }
 
-.area__menor4{
-    position:relative;
-    left: 29px;
-    top: 17px;
-    width: 432px;
-    height: 260px;
-    background: #141414;
-    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
-    border-radius: 8px;
-    border: none;
-    color: white;   
-}
-
- .img__botoes4{
-    border-radius: 8px;
-    background: #141414;
-} 
-
-.codigo4{
-    background: #141414; 
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 0.75em;    
-}
-
-.titulo__projeto4{
-    position: relative;
-    left: 4.62%;
-    right: 4.62%;
-    top: 17.43%;
-    bottom: 50%;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-    font-size: 1.3125em;
-    margin: 8px 0px;
-}
-
-.descricao__projeto4{
-    position: relative;
-    left: 4.62%;
-    right: 4.62%;
-    top: 19.43%;
-    bottom: 50%;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 1em;
-    margin: 8px 0px;
-}
 
 @media (max-width: 768px) {
 
@@ -357,18 +224,39 @@
         left: 10px;
     }
     
-    #area__maior{
+    .caixa__grande{
         left: 10px;
         width: 704px;
         height: 342px;
     }
 
-    .area__menor{
-        left: 36px;
+    .area{
+        left: 24px;
         top: 27px;
         width: 656px;
         height: 294px;
     }
+
+    .preview{
+        left: 28px;
+        top: 27px;
+        width: 600px;
+        height: 250px;
+    }
+
+    .titulo__projeto{
+        top: 70%;
+    }
+
+    .descricao__projeto{
+        top: 73%;
+    }
+
+    .icones_interacao{
+        top: 75%;
+        left: 2%;
+    }
+
 
     .caixa_2{
         display: block;
@@ -376,69 +264,49 @@
         width: 704px;
         height: 518px;
         left: 10px;
-        top: 650px;
+        top: 660px;
 
     }
     
-    #area__maior2{
+    .caixa__grande2{
         left: 10px;
         width: 704px;
         height: 342px;
     }
 
-    .area__menor2{
-        left: 36px;
-        top: 27px;
-        width: 656px;
-        height: 294px;
-    }
-
+    
     .caixa_3{
         display: block;
 
         width: 704px;
         height: 518px;
         left: 10px;
-        top: 1170px;
+        top: 1180px;
 
     }
     
-    #area__maior3{
+    .caixa__grande3{
         left: 10px;
         width: 704px;
         height: 342px;
     }
-
-    .area__menor3{
-        left: 36px;
-        top: 27px;
-        width: 656px;
-        height: 294px;
-    }
-
+    
     .caixa_4{
         display: block;
 
         width: 704px;
         height: 518px;
         left: 10px;
-        top: 1680px;
+        top: 1690px;
 
     }
     
-    #area__maior4{
+    .caixa__grande4{
         left: 10px;
         width: 704px;
         height: 342px;
     }
 
-    .area__menor4{
-        left: 36px;
-        top: 27px;
-        width: 656px;
-        height: 294px;
-    }
-   
 }
 
 
@@ -447,33 +315,52 @@
     .caixa{
         width: 343px;
         height: 578px;
-        left: 5px;
+        left: 10px;
     }
     
-    #area__maior{
+    .caixa__grande{
         left: 5px;
         width: 343px;
         height: 402px;
     }
 
-    .area__menor{
-        left: 36px;
+    .area{
+        /* left: 36px; */
         top: 27px;
         width: 295px;
         height: 354px;
     }
 
-    .caixa_2{
-        display: block;
+    .preview{
+        left: 28px;
+        top: 27px;
+        width: 250px;
+        height: 300px;
+    }
 
+    .titulo__projeto{
+        top: 73%;
+    }
+
+    .descricao__projeto{
+        top: 75%;
+    }
+
+    .icones_interacao{
+        width: 295px;
+        top: 77%;
+        left: 2%;
+    }
+
+    .caixa_2{
         width: 343px;
         height: 578px;
-        left: 5px;
-        top: 680px;
+        left: 10px;
+        top: 730px;
 
     }
     
-    #area__maior2{
+    .caixa__grande2{
         left: 5px;
         width: 343px;
         height: 402px;
@@ -487,16 +374,14 @@
     }
 
     .caixa_3{
-        display: block;
-
         width: 343px;
-        height: 518px;
-        left: 5px;
-        top: 1260px;
+        height: 578px;
+        left: 10px;
+        top: 1325px;
 
     }
     
-    #area__maior3{
+    .caixa__grande3{
         left: 5px;
         width: 343px;
        height: 402px;
@@ -510,16 +395,14 @@
     }
 
     .caixa_4{
-        display: block;
-
         width: 343px;
         height: 578px;
-        left: 5px;
-        top: 1780px;
+        left: 10px;
+        top: 1920px;
 
     }
     
-    #area__maior4{
+    .caixa__grande4{
         left: 10px;
         width: 343px;
         height: 402px;
