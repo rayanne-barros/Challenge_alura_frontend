@@ -95,7 +95,7 @@
     display: none;
     background: #2D415B;
     width: 200px;
-    height: 166vh;
+    height: 500px;
     border-radius: 8px;
     padding: 1rem;
     position: absolute;
@@ -131,11 +131,9 @@
     transform: translate(-60px, -30px);
 }
 
-
-
-.cliente__hamburguer{
-    
-} 
+.fundo{
+    background: #2D415B;
+}
 
 .cliente__foto{
     position: absolute;
@@ -169,31 +167,19 @@
     background:transparent;
 }
 
+.img__editor{
+    background: rgba(80, 129, 251, 1);
+    margin-right: 16px;
+    margin-top: 16px;  
+    border-radius: 16px; 
+}
 
-
-.img__editor, .img__comunidade{
+.img__comunidade{
   
    margin-right: 16px;
    margin-top: 16px;  
    background: rgba(80, 129, 251, 0.16);
    border-radius: 16px;   
-}
-
-.img__editor:hover, .img__comunidade:hover {
-    background: rgba(80, 129, 251, 0.64);
-}
-
-.img__editor:active , .img__comunidade:active{
-    background: rgba(80, 129, 251, 1);
-
-}
-
-/* .img__comunidade{
-    
-   margin-right: 16px;
-   margin-top: 16px;
-   background: rgba(80, 129, 251, 0.16); 
-   border-radius: 16px;
 }
 
 .img__comunidade:hover {
@@ -203,30 +189,29 @@
 .img__comunidade:active{
     background: rgba(80, 129, 251, 1);
 
-} */
-.editor_texto, .comunidade {   
+}
+
+.editor_texto{
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 16px;
+ }
+ 
+ .comunidade {   
     color: rgba(255, 255, 255, 0.56);
     text-decoration: none;
     font-size: 1em;
     margin-top: 16px; 
 } 
 
-/* .comunidade {
-    
-    text-decoration: none;
-    font-size: 1em;
-    margin-top: 16px;
-    color: rgba(255, 255, 255, 0.56);
-} */
-
-.editor_texto:hover, .comunidade:hover{
+.comunidade:hover{
     color: rgba(255, 255, 255, 0.86);
 }
 
-.editor_texto:active, .comunidade:active{
+.comunidade:active{
     color: white;
 }
-
 
 
 @media (max-width: 768px) {
@@ -250,15 +235,6 @@
         align-content: center;         
     }
 
-        
-        
-    /* #menu__botao:hover{
-        background: rgba(80, 129, 251, 0,08);
-    }
-    #menu__botao:active{
-        background: rgba(80, 129, 251, 0,16);
-    } */
-
     .menu{
         display: none;
     }
@@ -266,9 +242,7 @@
     .menu__hamburguer{
         display: block;
         
-    }
-
-  
+    }  
 }
 
 
@@ -279,20 +253,15 @@
     }
     .cabecalho__nav_pesquisa{
         display: none;
+        width: 110px;
     }
     .lupa_img{
         display: flex;
-    }
+    } 
 
     #menu__botao{
         
         align-content: center;
     }
 
-    /* #menu__botao:hover{
-        background: rgba(80, 129, 251, 0,08);
-    }
-    #menu__botao:active{
-        background: rgba(80, 129, 251, 0,16);
-    } */
 }

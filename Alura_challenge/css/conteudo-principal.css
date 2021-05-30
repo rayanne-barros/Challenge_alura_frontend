@@ -87,11 +87,13 @@
         width: 640px;       
     }
 
-    #caixa__media{
-        width: 610px;
-        
+    .preview{
+        left: 20px;
+        top: 27px;
+        width: 600px;
+        height: 250px;
     }
-
+    
     .visualizar{
         width: 704px;
         left: 30px;
@@ -112,12 +114,13 @@
         height: 428px;
     }
 
-    #caixa__media{
-        width: 239px;
-        height: 400px ;
-        
+    .preview{
+        left: 20px;
+        top: 27px;
+        width: 250px;
+        height: 300px;
     }
-
+   
     .visualizar{
         width: 343px;
         left: 15px;

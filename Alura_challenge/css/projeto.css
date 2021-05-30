@@ -17,7 +17,7 @@
 }
 
 .nome__projeto{
-    /* padding: 0px; */
+   
     width: 196px;
     height: 56px;
     left: 0px;
@@ -38,9 +38,7 @@
 }
 
 #descricao__projeto{
-    /* display: flex;
-    flex-direction: column;
-    padding: 0px; */
+    
     width: 196px;
     height: 70px;
     left: 0px;
@@ -52,11 +50,6 @@
     margin-top: 16px;
 }
 
-/* #descricao__projeto::placeholder{
-    color: rgba(255, 255, 255, 0.64);    
-    font-size: 1em;
-    font-family: 'Inter', sans-serif;   
-} */
 
 .titulo__personalizacao{
     position: relative;
@@ -86,13 +79,6 @@
     background: rgba(255, 255, 255, 0.24);
 }
 
-/* .js__personalizacao{
-    height: 18px;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.75em;      
-    color: rgba(255, 255, 255, 0.16); 
-    margin-top: 40px;
-} */
 
 #cor{
     background: rgba(196, 196, 196, 0.01);
@@ -153,7 +139,7 @@
         margin-top: 16px;
     }
 
-    #cor__azul{
+    #cor{
         width: 344px;
         
     }
@@ -188,7 +174,7 @@
         margin-top: 16px;
     }
 
-    #cor__azul{
+    #cor{
         width: 343px;        
     }
 
