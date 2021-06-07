@@ -7,71 +7,196 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/cabecalho_pag2.css">
     <link rel="stylesheet" href="css/conteudo_pag2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     
 </head>
 <body>
+    
     <header class="cabecalho">
 
         <div class="container">
-            <nav class="cabecalho__nav">
+            <nav class="cabecalho__nav" >
                 <img class="cabecalho__nav_logo" src="imagens/Logo.svg" alt="Logo da Plataforma Alura DEV">
 
-                <input class="cabecalho__nav_pesquisa" type="text" placeholder="Busque por algo">
+                <div class="divisao_input">
+
+                    <input class="cabecalho__nav_pesquisa" type="text" placeholder="Busque por algo">
+                    <button class="lupa"> <img src="imagens/Vector.svg" alt="" class="lupa_img"></button>
+                </div>
 
                 <img class="cabecalho__nav_foto" src="imagens/author.png" alt="Foto do usuário">
 
+                <div class="menu__hamburguer" id="menu__hamburguer">
+                    <div id="menu__botao" onclick="menuOnClick()" >
+                        <div id="bar1" class="bar" ></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                    <ul class="lista__menu  lista__menu_hamburguer" id="lista__menu_hamburguer">
+                        <li class="itens__lista  lista__hamburguer">
+                            <img class="img__editor" src="imagens/Icon.svg" alt="Logo do editor de texto">
+                            <a class="editor_texto fundo" href="index.html">Editor de Texto</a>
+                        </li>
+                        <li class="itens__lista lista__hamburguer">
+                            <img class="img__comunidade" src="imagens/comunidade.png" alt="Logo da comunidade">
+                            <a class="comunidade fundo" href="pag2.html">Comunidade</a>
+                        </li>
+                        <div class="cliente_hamburguer">
+                            <hr>
+                            <img class="cliente__foto" src="imagens/author.png" alt="Foto do usuário">
+                        </div>
+                    </ul>
+                </div> 
             </nav>
-
+            
         </div>
-
-        <nav class="menu">
+        
+        <nav class="menu">               
 
             <h2 class="titulo_menu">menu</h2>
             <ul class="lista__menu">
                 <li class="itens__lista">
-                    <img class="img__editor" src="imagens/Icon.png" alt="Logo do editor de texto">
-                    <a class="editor_texto" href="#">Editor de Texto</a>
+                    <img class="img__editor" src="imagens/Icon.svg" alt="Logo do editor de texto">
+                    <a class="editor_texto" href="index.html">Editor de Texto</a>
                 </li>
                 <li class="itens__lista">
-                    <img class="img__comunidade" src="imagens/Icon-1.png" alt="Logo da comunidade">
-                    <a class="comunidade" href="#">Comunidade</a>
+                    <img class="img__comunidade" src="imagens/comunidade.png" alt="Logo da comunidade">
+                    <a class="comunidade" href="pag2.html">Comunidade</a>
                 </li>
+
             </ul>
 
         </nav>
 
+
     </header>
 
     <main>
+        <ul class="todos__projetos">
+        </ul>
+
+        <!-- 
         <div class="caixa">
-            <textarea name="teste" id="caixa__grande" cols="30" rows="10"></textarea>
+            <div class="caixa__grande">
+                 
+                <div class="area">
+                                      
+                    <code class="preview hljs" contenteditable="true" aria-label="editor">
+                       
+                        
+                    </code> 
+                </div> 
+                               
+            </div>
 
-            <div class="area">
-                <img class="img__botoes" src="imagens/mac_buttons.png" alt="">
-                <p class="codigo">
-                    <br> <br>
+            <h2 class="titulo__projeto">Título do projeto</h2>
+            <p class="descricao__projeto">Essa é a descrição do meu projeto</p>
 
-                    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) <br> <br>
-
-                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) <br> <br>
-
-                    const unfold = (f, seed) => { <br>
-                    const go = (f, seed, acc) => { <br>
-                    const res = f(seed) <br>
-                    return res ? go(f, res[1], acc.concat([res[0]])) : acc <br>
-                    } <br>
-                    return go(f, seed, []) <br>
-                    } <br>
-                </p>
-
-            
+            <div class="icones_interacao">
+                <div class="interatividade">
+                    <i class="fas fa-comment icone"></i><p class="interatividade__numeros">9</p>
+                    <i class="fas fa-heart icone" id="like"></i><p class="interatividade__numeros">9</p>
+                </div>
+                                
+                <img src="imagens/author.svg" alt="Foto do usuário" class="foto">
             </div>
 
         </div>
 
+        <div class="caixa_2">
+            
+            
+            <div class="caixa__grande2">
+                 
+                <div class="area">
+                                      
+                    <code class="preview hljs" contenteditable="true" aria-label="editor">
+                       
+                        
+                    </code> 
+                </div> 
+                               
+            </div>
+
+            <h2 class="titulo__projeto">Título do projeto</h2>
+            <p class="descricao__projeto">Essa é a descrição do meu projeto</p>
+
+            <div class="icones_interacao">
+                <div class="interatividade">
+                    <i class="fas fa-comment icone"></i><p class="interatividade__numeros">9</p>
+                    <i class="fas fa-heart icone" id="like"></i><p class="interatividade__numeros">9</p>
+                </div>
+              
+                <img src="imagens/author.svg" alt="Foto do usuário" class="foto">
+            </div>
+        </div>
+
+        <div class="caixa_3">
+            
+            <div class="caixa__grande3">
+                 
+                <div class="area">
+                                      
+                    <code class="preview hljs" contenteditable="true" aria-label="editor">
+                       
+                        
+                    </code> 
+                </div> 
+                               
+            </div>
+            
+            <h2 class="titulo__projeto">Título do projeto</h2>
+            <p class="descricao__projeto">Essa é a descrição do meu projeto</p>
+
+            <div class="icones_interacao">
+                <div class="interatividade">
+                    <i class="fas fa-comment icone"></i><p class="interatividade__numeros">9</p>
+                    <i class="fas fa-heart icone" id="like"></i><p class="interatividade__numeros">9</p>
+                </div>
+                
+                <img src="imagens/author.svg" alt="Foto do usuário" class="foto">
+            </div>
+        </div>
+
+        <div class="caixa_4">
+            
+            <div class="caixa__grande4">
+                 
+                <div class="area">
+                                      
+                    <code class="preview hljs" contenteditable="true" aria-label="editor">
+                       
+                        
+                    </code> 
+                </div> 
+                               
+            </div>
+
+            <h2 class="titulo__projeto">Título do projeto</h2>
+            <p class="descricao__projeto">Essa é a descrição do meu projeto</p>
+
+            <div class="icones_interacao">
+                <div class="interatividade">
+                    <i class="fas fa-comment icone"></i><p class="interatividade__numeros">9</p>
+                    <i class="fas fa-heart icone" id="like"></i><p class="interatividade__numeros">9</p>
+                </div>
+                            
+                <img src="imagens/author.svg" alt="Foto do usuário" class="foto">
+            </div>
+        </div>  -->
+
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script> 
+    <script src="sintaxe.js"></script>
+    <script src="js/mudaCor.js"></script>
+    <script src="js/menuHamburguer.js"></script>
+    <script src="js/comunidade.js"></script>
+    
+
 </body>
 </html>

@@ -8,16 +8,23 @@
 
 .cabecalho__nav{
     display: flex;
-    /* align-items: center; */
+    align-items: center; 
     justify-content: space-between;
 }
 
+.divisao_input{
+    width: 752px;
+    display: flex;
+    justify-self: unset;
+    justify-content: center;
+
+}
 
 .cabecalho__nav_pesquisa{
     width: 752px;
     height: 56px;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.16);    
+    background: rgba(255, 255, 255, 0.16);    
     border: none;   
 }
 
@@ -26,6 +33,115 @@
     color: rgba(255, 255, 255, 0.64);    
     font-size: 1em;
     font-family: 'Inter', sans-serif;
+}
+
+.cabecalho__nav_pesquisa:hover{
+    background: rgba(255, 255, 255, 0.24);
+}
+
+.lupa{
+   border: none;
+} 
+.lupa_img{
+    display: none;
+   background: transparent;
+}
+
+.cabecalho__nav_foto:hover{
+    background: rgba(255, 255, 255, 0.08);
+}
+
+#menu__botao{
+    width: 40px;
+    height: 30px;
+    margin: 10px 0 10px 20px;
+    cursor: pointer;
+    display: none;   
+}
+
+#menu__botao:hover{
+    background: rgba(80, 129, 251, 0,08);
+}
+#menu__botao:active{
+    background: rgba(80, 129, 251, 0,16);
+}
+
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1{
+    transform: translateY(-4px);
+}
+
+#bar3{
+    transform: translateY(4px);
+}
+
+.menu__hamburguer{
+    display: none;
+    border-radius: 8px;
+    width: auto;
+    min-width: 48px;
+    height: auto;  
+}
+
+.lista__menu_hamburguer{
+    display: none;
+    background: #2D415B;
+    width: 200px;
+    height: 500px;
+    border-radius: 8px;
+    padding: 1rem;
+    position: absolute;
+    top: 15%; 
+    right: 1px;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+    transition: right 200ms linear;
+    z-index:2;
+}
+
+.change{
+    display: block;
+}
+
+.change .bar{
+    background: white;
+}
+
+.change #bar1{
+    transform: translateY(4px) rotate(-45deg);
+
+}
+
+.change #bar2{
+    opacity: 0;
+}
+
+.change #bar3{
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.change_hamburguer{
+    transform: translate(-60px, -30px);
+}
+
+.fundo{
+    background: #2D415B;
+}
+
+
+.cliente__foto{
+    position: absolute;
+    background: transparent;
+    margin-top: 10%;
+}
+.cliente__foto:hover{
+    background: rgba(255, 255, 255, 0.08)
 }
 
 .menu{
@@ -51,36 +167,110 @@
 .itens__lista {
     display: flex;    
     align-items: center;
+    background:transparent;
 }
 
 .img__editor{
   
-   margin-right: 16px;
-   margin-top: 16px; 
-   background: rgba(80, 129, 251, 0.16);
-   border-radius: 16px;     
-}
+    margin-right: 16px;
+    margin-top: 16px;  
+    background: rgba(80, 129, 251, 0.16);
+    border-radius: 16px;   
+ }
 
-.img__comunidade{
-    
-   margin-right: 16px;
-   margin-top: 16px;
-   background: #5081FB;
-   border-radius: 16px;
-}
+ .img__comunidade{
+    margin-right: 16px;
+    margin-top: 16px;  
+    background: rgba(80, 129, 251, 1);
+    border-radius: 16px;   
+ }
+ 
+ .img__editor:hover {
+     background: rgba(80, 129, 251, 0.64);
+ }
+ 
+ .img__editor:active{
+     background: rgba(80, 129, 251, 1);
+ 
+ }
 
  .editor_texto {   
-    /* color: white; */
+    color: rgba(255, 255, 255, 0.56);
     text-decoration: none;
     font-size: 1em;
     margin-top: 16px; 
-    color: rgba(255, 255, 255, 0.56);
 } 
 
 .comunidade {
-    color: white;
+    
     text-decoration: none;
     font-size: 1em;
     margin-top: 16px;
-   
+    color: white;
+} 
+
+.editor_texto:hover{
+    color: rgba(255, 255, 255, 0.86);
+}
+
+.editor_texto:active{
+    color: white;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .cabecalho__nav{
+        width: 100%;
+    }
+    .cabecalho__nav_foto{
+        display: none;
+    }
+    
+    .cabecalho__nav_pesquisa{
+        width: 431px;
+    }
+    
+    
+    #menu__botao{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: center;         
+    }
+
+     
+    .menu{
+        display: none;
+    }
+
+    .menu__hamburguer{
+        display: block;
+        
+    }
+
+  
+}
+
+
+@media (max-width: 375px){
+    
+    .divisao_input{
+        justify-content: flex-end;
+    }
+    .cabecalho__nav_pesquisa{
+        display: none;
+        width: 110px;
+    }
+    .lupa_img{
+        display: flex;
+    }
+
+    #menu__botao{
+        
+        align-content: center;
+    }
+
+    
 }
