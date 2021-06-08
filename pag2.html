@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Alura_challenge/css/reset.css">
+    <link rel="stylesheet" href="Alura_challenge/css/cabecalho_pag2.css">
+    <link rel="stylesheet" href="Alura_challenge/css/conteudo_pag2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+</head>
+<body>
+    
+    <header class="cabecalho">
+
+        <div class="container">
+            <nav class="cabecalho__nav" >
+                <img class="cabecalho__nav_logo" src="Alura_challenge/imagens/Logo.svg" alt="Logo da Plataforma Alura DEV">
+
+                <div class="divisao_input">
+
+                    <input class="cabecalho__nav_pesquisa" type="text" placeholder="Busque por algo">
+                    <button class="lupa"> <img src="Alura_challenge/imagens/Vector.svg" alt="" class="lupa_img"></button>
+                </div>
+
+                <img class="cabecalho__nav_foto" src="Alura_challenge/imagens/author.png" alt="Foto do usuário">
+
+                <div class="menu__hamburguer" id="menu__hamburguer">
+                    <div id="menu__botao" onclick="menuOnClick()" >
+                        <div id="bar1" class="bar" ></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                    <ul class="lista__menu  lista__menu_hamburguer" id="lista__menu_hamburguer">
+                        <li class="itens__lista  lista__hamburguer">
+                            <img class="img__editor" src="Alura_challenge/imagens/Icon.svg" alt="Logo do editor de texto">
+                            <a class="editor_texto fundo" href="index.html">Editor de Texto</a>
+                        </li>
+                        <li class="itens__lista lista__hamburguer">
+                            <img class="img__comunidade" src="Alura_challenge/imagens/comunidade.png" alt="Logo da comunidade">
+                            <a class="comunidade fundo" href="pag2.html">Comunidade</a>
+                        </li>
+                        <div class="cliente_hamburguer">
+                            <hr>
+                            <img class="cliente__foto" src="Alura_challenge/imagens/author.png" alt="Foto do usuário">
+                        </div>
+                    </ul>
+                </div> 
+            </nav>
+            
+        </div>
+        
+        <nav class="menu">               
+
+            <h2 class="titulo_menu">menu</h2>
+            <ul class="lista__menu">
+                <li class="itens__lista">
+                    <img class="img__editor" src="Alura_challenge/imagens/Icon.svg" alt="Logo do editor de texto">
+                    <a class="editor_texto" href="index.html">Editor de Texto</a>
+                </li>
+                <li class="itens__lista">
+                    <img class="img__comunidade" src="Alura_challenge/imagens/comunidade.png" alt="Logo da comunidade">
+                    <a class="comunidade" href="pag2.html">Comunidade</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+    </header>
+
+    <main>
+        <ul class="todos__projetos">
+        </ul>
+
+      
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script> 
+    <script src="sintaxe.js"></script>
+    <script src="Alura_challenge/js/mudaCor.js"></script>
+    <script src="Alura_challenge/js/menuHamburguer.js"></script>
+    <script src="Alura_challenge/js/comunidade.js"></script>
+   
+    
+
+</body>
+</html>
