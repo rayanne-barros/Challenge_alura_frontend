@@ -8,7 +8,7 @@ Primeiramente é necessário ter o node js instalado, clone o projeto com `git c
 
 ## Como utilizar
 
-- Para utilizar o editor de código, basta clicar no bloco preto e começar a digitar, após ter digitado o seu código, clique no botão "Visualizar com o highlight", para que o highlight seja ativado.
+- Para utilizar o editor de código, basta clicar no bloco preto e digitar, após ter digitado o seu código, clique no botão "Visualizar com o highlight", para que o highlight seja ativado.
 
 - Para alterar a cor de fundo do editor, clique no botão com cor azul e escolha a cor desejada. 
  
@@ -27,7 +27,7 @@ Os usuários serão capazes de:
 
 ### Links
 
-- Site hospedado: (https://rayanne-barros.github.io/Challenge_alura_frontend/)
+- Projeto disponível em: (https://rayanne-barros.github.io/Challenge_alura_frontend/)
 
 
 ### Construído com:
